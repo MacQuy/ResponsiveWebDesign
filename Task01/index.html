@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Borrelsword Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Borrelsword Member Recruitment Form</h1>
+    <p id="description">Input your information to apply. Thank you for taking time and remember us!</p>
+    <div class="container">
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name: </label>
+                <input type="text" placeholder="Your name..." id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" placeholder="Your email..." id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" min="18" max="70" placeholder="Your age..." id="number" required>
+            </div>
+            <div class="form-group">
+                <p>Gender: Male or Female?</p>
+                <label>
+                    <input type="radio" name="gender" value="male">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label>
+            </div>
+            <div class="form-group">
+                <p>How do you know about us?</p>
+                <select id="dropdown" required>
+                    <option disabled selected value>Choose one</option>
+                    <option value="1">Facebook</option>
+                    <option value="2">Youtube</option>
+                    <option value="3">Game</option>
+                    <option value="4">Other</option>
+                </select>
+            </div>
+            <div class="form-group" id="hobbies">
+                <p>What is your hobbies?</p>
+                <label>
+                    <input type="checkbox" value="gym">
+                    Gym
+                </label>
+                <label>
+                    <input type="checkbox" value="code">
+                    Code
+                </label>
+                <label>
+                    <input type="checkbox" value="gaming">
+                    Gaming
+                </label>
+                <label>
+                    <input type="checkbox" value="watching">
+                    Watching TV shows
+                </label>
+                <label>
+                    <input type="checkbox" value="travelling">
+                    Travelling
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Describe about yourself</p>
+                <textarea placeholder="Like where are you from? What kind of person are you?..."></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="footer">
+        <p>Contact me</p>
+        <div id="contact">
+            <a href="https://www.facebook.com/nhatduong.nguyen.18">Facebook</a>
+            <a href="https://github.com/MacQuy">Github</a>
+            <label>Email: macquydev77@gmail.com</label>
+        </div>
+    </div>
+  </body>
+</html>
