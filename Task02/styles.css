@@ -1,0 +1,86 @@
+body, html {
+    background-color: #202123;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #ECECF1;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+}
+
+#footer p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+#contact a, #contact label {
+    display: block;
+    margin: 5px auto;
+    color: #4047a7;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact label {
+    color: #ECECF1;
+}
+
+#img-div {
+    border-radius: 10px;
+    background-color: #3d3d3e;
+    color: #ECECF1;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+#image {
+    max-width: 100%;
+    width: 50%;
+    padding: 10px 25%;
+}
+
+#img-caption {
+    margin: 10px 25%;
+}
+
+#tribute-info {
+    color: #ECECF1;
+    background-color: #3d3d3e;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#tribute-info h2 {
+    margin: auto 25%;
+}
+
+#tribute-info h3 {
+    margin: auto 25%;
+    padding-bottom: 20px;
+}
+
+#tribute-link {
+    color: #4047a7;
+    text-decoration: none;
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+}
