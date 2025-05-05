@@ -1,0 +1,141 @@
+body, html {
+    background-color: #202123;
+    height: 100%;
+    margin: 0;
+    font-size: large;
+    color: rgb(204, 204, 204);
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    position: relative;
+    z-index: 999;
+}
+
+#footer p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+#contact a, #contact label {
+    display: block;
+    margin: 5px auto;
+    color: #4047a7;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact label {
+    color: #ECECF1;
+}
+
+.code-container {
+    background-color: #3e3e3e;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    z-index: 1;
+}
+
+#navbar header {
+    font-size: x-large;
+    margin: 10px;
+    font-weight: bold;
+    color: rgb(229, 229, 229);
+}
+
+#navbar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#navbar li {
+    font-size: larger;
+    padding: 10px;
+    border-top: solid;
+}
+
+#navbar a {
+    color: rgb(229, 229, 229);
+    text-decoration: none;
+}
+
+#main-doc {
+    margin-left: 320px;
+}
+
+#main-doc header {
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(143, 143, 143);
+}
+
+.main-section ul {
+    list-style: none;
+}
+
+.code-container {
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.code-container ul {
+    margin: 0 auto;
+}
+
+.code-container li {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+#Summoning_Requirements p, #Sample_Use_Case p{
+    padding-left: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+  
+    #main-doc {
+        margin-left: 1%;
+        margin-top: 10px;
+    }
+}
