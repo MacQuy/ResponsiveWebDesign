@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+    background-color: #121212;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: system-ui, sans-serif;
+}
+
+:root {
+    --outline-color: linear-gradient(90deg, #D946EF, #8B5CF6, #22D3EE);
+}
+
+.card {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: 
+        linear-gradient(#0f172a, #0f172a) padding-box,
+        var(--outline-color) border-box;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.code {
+    background: var(--outline-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: normal;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#welcome-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 999;
+}
+
+#right-container {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.button-container a, span {
+    text-decoration: none;
+    font-size: larger;
+}
+
+.button-container a {
+    color: #F472B6;
+}
+
+.button-container:hover .code, #welcome-section:hover .code {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#welcome-text {
+    width: 75%;
+    height: 50%;
+}
+
+#welcome-text h1 {
+    text-align: center;
+    margin-top: calc(25vh - 1em);
+}
+
+#welcome-text p {
+    text-align: right;
+    margin-right: 25%;
+    margin-top: 10px;
+    font-size: larger;
+}
