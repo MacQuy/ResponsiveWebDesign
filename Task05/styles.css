@@ -76,7 +76,7 @@ body {
     color: #F472B6;
 }
 
-.button-container:hover .code, #welcome-section:hover .code {
+.button-container:hover .code, #welcome-text:hover .code {
     opacity: 1;
     transform: translateY(0);
 }
@@ -96,4 +96,31 @@ body {
     margin-right: 25%;
     margin-top: 10px;
     font-size: larger;
+}
+
+#projects h1 {
+    text-align: center;
+}
+
+.line {
+    width: 50%;
+    height: 5px;
+    background: var(--outline-color);
+    margin-top: 10px;
+    margin-left: 25%;
+    border-radius: 10px;
+}
+
+.description {
+    text-align: center;
+    margin-top: 10px;
+    font-size: larger;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: opacity 0.5s ease, transform 2s ease;
+}
+
+.description.show {
+    opacity: 1;
+    transform: translateX(0);
 }

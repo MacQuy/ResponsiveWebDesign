@@ -13,9 +13,27 @@
             </div>
         </div>
         <div id="projects">
-            <a class="project-tile" href=""></a>
-            <a class="project-tile" href=""></a>
-            <a class="project-tile" href=""></a>
+            <h1>Projects</h1>
+            <div class="line"></div>
+            <div class="description">Below are some of my projects that I have done in this couse.</div>
+            <div class="flex-container">
+                <a class="project-tile">
+                    <img src="">
+                    <p></p>
+                </a>
+                <a class="project-tile">
+                    <img>
+                    <p></p>
+                </a>
+                <a class="project-tile">
+                    <img>
+                    <p></p>
+                </a>
+                <a class="project-tile">
+                    <img>
+                    <p></p>
+                </a>
+            </div>
         </div>
         <nav id="navbar" class="card">
             <div id="right-container">
@@ -30,5 +48,17 @@
                 </div>
             </div>
         </nav>
+        <script>
+            window.onscroll = function () {
+                let text = document.querySelector(".description");
+                let rect = text.getBoundingClientRect();
+            
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                  text.classList.add("show");
+                } else {
+                  text.classList.remove("show");
+                }
+            };
+        </script>
     </body>
 </html>
