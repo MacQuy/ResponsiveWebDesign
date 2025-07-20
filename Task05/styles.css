@@ -17,6 +17,7 @@ body {
 
 :root {
     --outline-color: linear-gradient(90deg, #D946EF, #8B5CF6, #22D3EE);
+    --pink-color: #F472B6;
 }
 
 .card {
@@ -73,7 +74,7 @@ body {
 }
 
 .button-container a {
-    color: #F472B6;
+    color: var(--pink-color);
 }
 
 .button-container:hover .code, #welcome-text:hover .code {
@@ -121,6 +122,51 @@ body {
 }
 
 .description.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 75%;
+    margin-left: 15%;
+    padding: 50px 5%;
+    column-gap: 10%;
+    row-gap: 40px;
+}
+
+.project-tile {
+    width: 45%;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.project-tile p {
+    color: var(--pink-color);
+    font-size: larger;
+    margin-top: 5%;
+}
+
+.project-tile img {
+    height: 63.5%;
+    width: 92%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px white solid;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 20px rgba(217, 70, 239, 0.6),
+        0 0 20px rgba(139, 92, 246, 0.4),
+        0 0 20px rgba(34, 211, 238, 0.3);
+}
+
+.project-tile:hover .code {
     opacity: 1;
     transform: translateX(0);
 }
