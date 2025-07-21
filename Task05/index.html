@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Portfolio</title>
         <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
         <div id="welcome-section">
@@ -39,6 +40,16 @@
                 </a>
             </div>
         </div>
+        <div id="contact">
+            <h1>Contact</h1>
+            <div class="line"></div>
+            <div class="description">Let's work together</div>
+            <div class="flex-container" id="contact-container">
+                <a class="contact-item card" id="profile-link" href="https://github.com/MacQuy" target="_blank"><i class="fab fa-github"></i> Github</a>
+                <a class="contact-item card" href="https://www.facebook.com/nhatduong.nguyen.18" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a class="contact-item card" href="mailto:macquydev77@gmail.com" target="_blank"><i class="fab fa-google"></i> Email</a>
+            </div>
+        </div>
         <nav id="navbar" class="card">
             <div id="right-container">
                 <div class="button-container">
@@ -54,14 +65,16 @@
         </nav>
         <script>
             window.onscroll = function () {
-                let text = document.querySelector(".description");
-                let rect = text.getBoundingClientRect();
+                let texts = document.querySelectorAll(".description");
             
-                if (rect.top < window.innerHeight && rect.bottom > 0) {
-                  text.classList.add("show");
-                } else {
-                  text.classList.remove("show");
-                }
+                texts.forEach(function (text) {
+                    let rect = text.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        text.classList.add("show");
+                    } else {
+                        text.classList.remove("show");
+                    }
+                });
             };
         </script>
     </body>
